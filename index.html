@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WebAssembly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- styles -->
+  <link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="/src/assets/css/estilos.css">
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/slippry.css">
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/color/default.css">
+  <script src="assets/js/modernizr.custom.js"></script>
+
+</head>
+
+<body>
+  <header>
+
+    <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">WebAssembly</a>
+        </div>
+
+        <div class="navigation">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <nav>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="current"><a href="#intro">Inicio</a></li>
+                <li><a href="#queEs">¿Que es?</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#EPW">Web-Assembly</a></li>
+                <li><a href="#P_utilizar">¿Por qué utilizarlo?</a></li>
+                <li><a href="#PF">Js y Wasp</a></li>
+                <li><a href="#CC">Conceptos clave</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- section intro -->
+  <section id="intro">
+    <ul id="slippry-slider">
+      <li>
+        <a href="#slide1"><img src="/assets/img/slide/1.png"></a>
+      </li>
+      <li>
+        <a href="#slide2"><img src="/assets/img/slide/2.jpg"></a>
+      </li>
+      <li>
+        <a href="#slide3"><img src="/assets/img/slide/3.png"></a>
+      </li>
+    </ul>
+  </section>
+  <!-- Que es web asssembly -->
+  <section id="queEs" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h3><span>¿Que es Web-Assembly?</span></h3>
+          </div>
+          <div class="sub-heading">
+            <p>
+              Web Assembly es un nuevo tipo de código que puede ser ejecutado en navegadores modernos, es un lenguaje de
+              bajo nivel, similar al lenguaje ensamblador, con un formato binario compacto que se ejecuta con
+              rendimiento casi nativo y provee un objetivo de compilación para lenguajes como C/C++ y Rust que les
+              permite correr en la web.
+              También es conocido en la web es una nueva tecnología del navegador que promete revolucionar el desarrollo
+              para el cliente.
+            </p>
+            <img src="/assets/img/slide/3.png" class="Center1">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- objetivos assembly -->
+  <section id="objetivos" class="section gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h3><span>Objetivos de Web Assembly</span></h3>
+          </div>
+          <class class="sub-heading1">
+            <p>
+              Web Assembly se está creando como un estándar abierto dentro del W3C WebAssembly Community Group con los
+              siguientes objetivos:
+            </p>
+            <p>
+              <b>Ser rápido, eficiente y portátil:</b> el código de WebAssembly se puede ejecutar a una velocidad casi
+              nativa en diferentes plataformas aprovechando las capacidades de hardware comunes .
+            </p>
+            <p>
+              <b>Ser legible y depurable:</b> WebAssembly es un lenguaje ensamblador de bajo nivel, pero tiene un
+              formato de texto legible por humanos (cuya especificación aún se está finalizando) que permite que el
+              código se escriba, vea y depure a mano.
+            </p>
+            <p>
+              <b>Mantener seguro:</b> WebAssembly está especificado para ejecutarse en un entorno de ejecución seguro y
+              aislado. Al igual que cualquier otro código web, hará cumplir las políticas de permisos y del mismo origen
+              del navegador.
+            </p>
+            <p>
+              <b>No rompa la web:</b> WebAssembly está diseñado para que funcione bien con otras tecnologías web y
+              mantenga la compatibilidad con versiones anteriores.
+              <img src="/assets/img/Imagen1.png" class="Center1">
+            </p>
+
+          </class>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!-- Que es web asssembly -->
+    <section id="EPW" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h3><span>¿Cómo encaja WebAssembly en la plataforma web?</span></h3>
+            </div>
+            <div class="sub-heading1">
+              <p>
+                Una máquina virtual (VM) que ejecuta el código de la aplicación web, por ejemplo, el código JavaScript
+                que alimenta sus aplicaciones.
+              </p>
+              <p>
+                Un conjunto de API web que la aplicación web puede llamar para controlar la funcionalidad del navegador
+                / dispositivo web y hacer que las cosas sucedan ( DOM , CSSOM , WebGL , IndexedDB , API de audio web ,
+                etc.).
+              </p>
+              <img src="https://www.campusmvp.es/recursos/image.axd?picture=/2017/4T/WebAssembly-Net-Portada.png"
+                class="Center2">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="P_utilizar" class="section gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h3><span>¿Por qué utilizar Web Assembly?</span></h3>
+            </div>
+            <class class="sub-heading1">
+              <p>
+                Históricamente, la VM solo ha podido cargar JavaScript. Esto ha funcionado bien para nosotros, ya que
+                JavaScript es lo suficientemente poderoso como para resolver la mayoría de los problemas que la gente
+                tiene en la Web hoy en día. Sin embargo, nos hemos encontrado con problemas de rendimiento cuando
+                intentamos usar JavaScript para casos de uso más intensivos como juegos 3D, realidad virtual y
+                aumentada, visión por computadora, edición de imágenes / videos y una serie de otros dominios que exigen
+                un rendimiento nativo.
+              </p>
+              <img src="/assets/img/Imagen2.png" class="Center1">
+            </class>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+
+    <section id="PF" class="section gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h3><span>Puntos fuertes de JavaScript y Web-Assembly</span></h3>
+            </div>
+            <class class="sub-heading1">
+              <p>
+                JavaScript es un lenguaje de alto nivel, lo suficientemente flexible y expresivo para escribir
+                aplicaciones web.
+
+              </p>
+              <p>WebAssembly es un lenguaje ensamblador de bajo nivel con un formato binario compacto que se ejecuta con
+                un rendimiento casi nativo y proporciona lenguajes con modelos de memoria de bajo nivel como C ++ y Rust
+                con un destino de compilación para que puedan ejecutarse en la web. </p>
+              <img src="/assets/img/javascript-typescript-webassembly.png " class="Center1">
+
+            </class>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <section id="CC" class="section gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h3><span>Conceptos claves de WebAssembly</span></h3>
+            </div>
+            <class class="sub-heading1">
+              <p>
+                <b> Módulo :</b> representa un binario de WebAssembly que ha sido compilado por el navegador en un
+                código de máquina ejecutable. Un módulo no tiene estado y, por lo tanto, como un Blob , se puede
+                compartir explícitamente entre Windows y trabajadores (vía postMessage()). Un módulo declara
+                importaciones y exportaciones como un módulo ES2015.
+              </p>
+              <p>
+                <b> Memoria :</b> un ArrayBuffer de tamaño variable que contiene la matriz lineal de bytes leídos y
+                escritos por las instrucciones de acceso a memoria de bajo nivel de WebAssembly.
+              </p>
+              <p>
+                <b>Tabla :</b> Una matriz de referencias de tipo redimensionable (por ejemplo, a funciones) que de otro
+                modo no podrían almacenarse como bytes sin procesar en la memoria (por razones de seguridad y
+                portabilidad).
+              </p>
+              <p>
+                <b> Instancia :</b> un módulo emparejado con todo el estado que usa en tiempo de ejecución, incluida una
+                memoria, una tabla y un conjunto de valores importados. Una instancia es como un módulo ES2015 que se ha
+                cargado en un global particular con un conjunto particular de importaciones.
+              </p>
+              <img src="/assets/img/Imagen3.png" class="Center1">
+            </class>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+
+
+    <section id="Ej" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h3><span>Hello word en Web-Assembly</span></h3>
+            </div>
+            <div class="sub-heading">
+              <p>
+                Creating a visual language around the beliefs of the brands we work with.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="/assets/img/ImagenCodigos.png" class="Center1">
+          <h3 class="heading"><span>Link Repositorio </span></h3>
+          <p class="heading">
+            <a href="https://github.com/MICKISS/WebAssembly-tutorial.git/">
+              https://github.com/MICKISS/WebAssembly-tutorial.git</a>
+          </p>
+
+        </div>
+    </section>
+    <!-- end section about -->
+    <!-- section works -->
+
+    <!-- section works -->
+    <!-- section contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h3><span>webassembly studio</span></h3>
+            </div>
+            <div class="sub-heading">
+              <p>
+                <a href="https://webassembly.studio/"> https://webassembly.studio/</a>
+                <img src="/assets/img/Imagen12.PNG" class="Center1">
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="verybottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="aligncenter">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="aligncenter">
+                  <p>
+                    Brayan Moreno - Miguel Sierra - Sergio Hernandez Theme - All right reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer>
+
+
+      <a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
+      <!-- javascript -->
+      <script src="assets/js/jquery-1.9.1.min.js"></script>
+      <script src="assets/js/jquery.easing.js"></script>
+      <script src="assets/js/classie.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/slippry.min.js"></script>
+      <script src="assets/js/nagging-menu.js"></script>
+      <script src="assets/js/jquery.nav.js"></script>
+      <script src="assets/js/jquery.scrollTo.js"></script>
+      <script src="assets/js/jquery.fancybox.pack.js"></script>
+      <script src="assets/js/jquery.fancybox-media.js"></script>
+      <script src="assets/js/masonry.pkgd.min.js"></script>
+      <script src="assets/js/imagesloaded.js"></script>
+      <script src="assets/js/jquery.nicescroll.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+      <script src="assets/js/AnimOnScroll.js"></script>
+      <script>
+        new AnimOnScroll(document.getElementById('grid'), {
+          minDuration: 0.4,
+          maxDuration: 0.7,
+          viewportFactor: 0.2
+        });
+      </script>
+      <script>
+        $(document).ready(function () {
+          $('#slippry-slider').slippry(
+            defaults = {
+              transition: 'vertical',
+              useCSS: true,
+              speed: 5000,
+              pause: 3000,
+              initSingle: false,
+              auto: true,
+              preload: 'visible',
+              pager: false,
+            }
+
+          )
+        });
+      </script>
+
+      <script src="assets/js/custom.js"></script>
+      <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
